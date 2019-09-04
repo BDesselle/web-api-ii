@@ -1,0 +1,8 @@
+// UPDATE POST BY ID
+PUT  http://localhost:6000/api/posts/12 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Post Was Updated",
+  "contents": "Or was it???"
+}
