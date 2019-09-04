@@ -1,0 +1,55 @@
+// CREATE A POST
+POST  http://localhost:6000/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Update This Post",
+  "contents": "..."
+}
+
+###
+
+// CREATE A COMMENT ON A POST BY ID
+POST  http://localhost:6000/api/posts/14/comments HTTP/1.1
+Content-Type: application/json
+
+{
+  "text": "New Comment"
+}
+
+###
+###
+###
+
+// READ ALL POSTS
+GET  http://localhost:6000/api/posts HTTP/1.1
+
+###
+
+// READ POST BY ID
+GET  http://localhost:6000/api/posts/14 HTTP/1.1
+
+###
+
+// READ COMMENTS BY POST ID
+GET  http://localhost:6000/api/posts/14/comments HTTP/1.1
+
+###
+###
+###
+
+// UPDATE POST BY ID
+PUT  http://localhost:6000/api/posts/14 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Post Was Updated",
+  "contents": "Or was it???"
+}
+
+###
+###
+###
+
+// DELETE A POST BY ID
+DELETE  http://localhost:6000/api/posts/13 HTTP/1.1
