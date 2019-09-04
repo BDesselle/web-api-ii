@@ -1,0 +1,12 @@
+// ALL POSTS
+GET  http://localhost:6000/api/posts HTTP/1.1
+
+###
+
+// POST BY ID
+GET  http://localhost:6000/api/posts/12 HTTP/1.1
+
+###
+
+// COMMENTS BY POST ID
+GET  http://localhost:6000/api/posts/1/comments HTTP/1.1
