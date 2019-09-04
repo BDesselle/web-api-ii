@@ -1,0 +1,2 @@
+// DELETE A POST BY ID
+DELETE  http://localhost:6000/api/posts/10 HTTP/1.1
